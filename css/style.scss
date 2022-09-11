@@ -532,6 +532,45 @@ section {
   }
 }
 
+/* ------------( CATEGORY )------------ */
+.category {
+  .box-container {
+    @include grid(16rem);
+
+    .box {
+      text-align: center;
+      border-radius: 0.5rem;
+      border: $border;
+      padding: 2rem;
+      background: $wite;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        background: $black;
+
+        h3 {
+          color: $wite;
+        }
+      }
+
+      img {
+        height: 8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+        color: $black;
+      }
+    }
+  }
+}
+
+/* ------------( PRODUCTS )------------ */
+.products {
+  
+}
+
 /* ------------( FOOTER )------------ */
 /* quick-links */
 .quick-links {
