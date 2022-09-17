@@ -805,6 +805,50 @@ section {
   }
 }
 
+/* ------------( NEWSLETTER )------------ */
+.newsletter {
+  background: $blue;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .content {
+    flex: 1 1 42rem;
+
+    h3 {
+      font-size: 6rem;
+      color: $wite;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 2.2rem;
+      color: $wite;
+    }
+  }
+
+  form {
+    flex: 1 1 42rem;
+    background: $wite;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    .email {
+      width: 100%;
+      padding: 0 1.4rem;
+      text-transform: none;
+      color: $light-color;
+      font-size: 1.6rem;
+    }
+
+    .btn {
+      margin-top: 0;
+    }
+  }
+}
+
 /* ------------( FOOTER )------------ */
 /* quick-links */
 .quick-links {
@@ -950,6 +994,20 @@ section {
       text-align: center;
     }
   }
+
+  .newsletter {
+    text-align: center;
+
+    .content {
+      h3 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -990,5 +1048,9 @@ section {
         text-align: center;
       }
     }
+  }
+
+  .content form .inputBox input {
+    width: 100%;
   }
 }
