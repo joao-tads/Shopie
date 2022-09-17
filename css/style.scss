@@ -849,6 +849,75 @@ section {
   }
 }
 
+/* ------------( LOGIN )------------ */
+.login {
+  form {
+    max-width: 40rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: $wite;
+    box-shadow: $box-shadow;
+    border: $border;
+    margin: 1rem auto;
+
+    h3 {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      color: $blue;
+      text-transform: uppercase;
+    }
+
+    .box {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      border-radius: 0.5rem;
+      border: $border;
+      font-size: 1.6rem;
+      color: $light-color;
+      text-transform: none;
+      margin: 0.7rem 0;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+
+      label {
+        font-size: 1.5rem;
+        color: $light-color;
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      align-items: center;
+
+      &.link {
+        background: $black;
+        text-align: center;
+        border-color: $black;
+
+        &:hover {
+          background: $wite;
+          color: $black;
+        }
+      }
+    }
+
+    p {
+      padding-top: 2rem;
+      font-size: 1.5rem;
+      color: $light-color;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 /* ------------( FOOTER )------------ */
 /* quick-links */
 .quick-links {
