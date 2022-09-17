@@ -568,7 +568,96 @@ section {
 
 /* ------------( PRODUCTS )------------ */
 .products {
-  
+  .box-container {
+    @include grid(38rem);
+
+    .box {
+      border: $border;
+      text-align: center;
+      background: $wite;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      &:hover .image {
+        .hover-img {
+          display: inline-block;
+        }
+
+        .main-img {
+          display: none;
+        }
+
+        .icons {
+          left: 1rem;
+        }
+      }
+
+      .image {
+        position: relative;
+
+        img {
+          height: 30rem;
+          animation: fadeIn 0.2s linear;
+        }
+
+        .hover-img {
+          display: none;
+        }
+
+        .icons {
+          position: absolute;
+          top: 0;
+          left: -7rem;
+
+          a {
+            display: block;
+            margin-top: 1rem;
+            height: 4.5rem;
+            width: 4.5rem;
+            line-height: 4.5rem;
+            font-size: 1.7rem;
+            border-radius: 50%;
+            color: $wite;
+            background: $black;
+
+            &:hover {
+              background: $blue;
+            }
+          }
+        }
+      }
+
+      .content {
+        padding: 2rem;
+
+        h3 {
+          font-size: 2rem;
+          color: $black;
+        }
+
+        .price {
+          font-size: 2.2rem;
+          color: $blue;
+          padding-bottom: 0.7rem;
+          padding-top: 0.5rem;
+
+          span {
+            color: $light-color;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+          }
+        }
+
+        .stars {
+          i {
+            font-size: 1.7rem;
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ------------( FOOTER )------------ */
