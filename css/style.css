@@ -706,7 +706,12 @@ section {
   margin-top: 0;
 }
 
-/* ------------( LOGIN )------------ */
+/* ------------( LOGIN/REGISTER )------------ */
+.register,
+.login {
+  height: 100vh;
+}
+.register form,
 .login form {
   max-width: 40rem;
   border-radius: 0.5rem;
@@ -714,14 +719,16 @@ section {
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border: 0.2rem solid #333;
-  margin: 1rem auto;
+  margin: 10rem auto;
 }
+.register form h3,
 .login form h3 {
   font-size: 2.5rem;
   padding-bottom: 1rem;
   color: #094ae3;
   text-transform: uppercase;
 }
+.register form .box,
 .login form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
@@ -732,6 +739,7 @@ section {
   text-transform: none;
   margin: 0.7rem 0;
 }
+.register form .remember,
 .login form .remember {
   display: flex;
   align-items: center;
@@ -739,24 +747,29 @@ section {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
+.register form .remember label,
 .login form .remember label {
   font-size: 1.5rem;
   color: #666;
   cursor: pointer;
 }
+.register form .btn,
 .login form .btn {
   width: 100%;
   align-items: center;
 }
+.register form .btn.link,
 .login form .btn.link {
   background: #333;
   text-align: center;
   border-color: #333;
 }
+.register form .btn.link:hover,
 .login form .btn.link:hover {
   background: #fff;
   color: #333;
 }
+.register form p,
 .login form p {
   padding-top: 2rem;
   font-size: 1.5rem;
